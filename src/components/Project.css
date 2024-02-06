@@ -1,0 +1,74 @@
+.projects-list-container {
+    padding: 20px;
+    font-family: 'PT Serif', serif;
+}
+
+.projects-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list-item {
+
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-date {
+    margin-right: 20px;
+    font-weight: bold;
+    color: #5A5A5A;
+}
+
+.project-title {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1em;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+.project-title:hover {
+    text-decoration: underline !important;
+}
+
+
+.project-details {
+    /* Initial state for hidden details */
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Updated to animate all properties */
+    padding: 0 20px; /* Starts with no vertical padding */
+    background-color: transparent; /* Optional: transitions background color */
+}
+
+.project-details.open {
+    /* Style for when details are shown */
+    max-height: 1000px; /* Set to a max value that can contain your content */
+    padding: 20px; /* Added padding for visible state */
+    background-color: #f9f9f9; /* Optional: transitions background color */
+}
+
+.project-details.open img[src$="/images/pomo.png"] {
+    max-width: 20%; /* Adjust the size as needed */
+}
+
+.project-screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center the images in the container */
+    margin-top: 20px;
+}
+
+.project-screenshot {
+    max-width: 40%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+    border-radius: 4px; /* Optional: rounds the corners */
+    margin-right: 50px; /* Add right margin */
+    margin-bottom: 50px;
+}

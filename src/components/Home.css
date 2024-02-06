@@ -1,0 +1,110 @@
+@media screen and (max-width: 768px) {
+    .left-content, .right-content {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+
+.home-container {
+    background: linear-gradient(to right, #2F61EB, #CAEBD3);
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'PT Serif', serif;
+}
+.left-content{
+    margin-left: 120px;
+    margin-top: 300px;
+}
+
+.right-content{
+    text-align: center; /* Center the content */
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align items horizontally in the flex container */
+    margin-left: 800px; /* Adjust as per your layout */
+    margin-top: -300px;
+}
+
+.button-container{
+    display: flex; /* Aligns buttons horizontally */
+    justify-content: center; /* Centers buttons in the container */
+    gap: 10px; /* Adds space between the buttons */
+}
+.main-title {
+    font-size: 3rem;
+    color: #CAEBD3;
+    text-align: left;
+    font-family: 'Roboto', sans-serif; /* Using Roboto for the bold effect */
+    font-weight: 700; /* 700 is for bold weight in font */
+}
+
+.description {
+
+    font-size: 1.2rem;
+}
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    border: 4px solid #fff; /* Add a white border */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a stronger shadow */
+    margin-top: 50px;
+}
+
+
+.btn {
+    margin: 10px;
+    border-radius: 8px; /* More rounded corners */
+    font-weight: bold;
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+
+.right-content {
+    text-align: center; /* Center the content */
+}
+
+.btn-primary {
+    background-color: #37F57E !important;
+    border-color: #37F57E !important;
+}
+
+.btn-primary:hover {
+    background-color: #5eab54 !important;
+    border-color: #5eab54 !important
+}
+
+.btn-secondary {
+    background-color: #DBCDF5 !important;
+    border-color: #DBCDF5 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #A5BCE2 !important; /* Change the background color on hover */
+    border-color: #A5BCE2 !important;
+}
+
+.btn-primary,
+.btn-secondary {
+    color:#000000  !important;
+}
+
+
+
+
+.footer-content {
+    text-align: center;
+    margin-top: 100px; /* Adjust as needed */
+    color: #FFFFFF; /* Or any color that fits your design */
+}
+
+.personal-info {
+    font-size: 1rem; /* Adjust size as needed */
+    color:black;
+
+}
+
+
