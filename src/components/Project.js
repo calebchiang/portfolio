@@ -101,8 +101,41 @@ const projectsData = [
     {
         id:3,
         date:"23-10-01",
-        name: "AR Asteroids Game",
-        description: "Unity and C# Development, Game Development, Augmented Reality",
+        name: "Stock Market Analysis App",
+        description: "Full Stack Web Application",
+        summary: () => (
+            <>
+            <strong>Summary:</strong>
+            <br />
+            <br />
+            The Pomodoro Technique is a renowned time management method that has
+            helped countless individuals boost their productivity. As a firm believer
+            in its effectiveness, I developed the "Pomo" Chrome extension to enhance my
+            study sessions and subsequently decided to share it with the world.
+            <br/>
+            <br/>
+            The Pomodoro Technique, created by Francesco Cirillo,
+            is simple yet powerful: work for 25 minutes with intense focus
+            (a "Pomodoro"), followed by a 5-minute break. This cycle repeats,
+            promoting optimal concentration and preventing burnout during extended
+            study or work periods.
+            <br/>
+            <br/>
+            Features:
+            <ul>
+                <li>User-Friendly UI: Pomo boasts an intuitive and aesthetically pleasing user interface that makes it easy for users to get started with the Pomodoro Technique. The clean design ensures minimal distractions.</li>
+                <li>Timer Functionality: The core feature of Pomo is the timer. With the click of a button, you can start a 25-minute work session. During this time, Pomo will count down, displaying the remaining minutes and notifying you when your Pomodoro is complete.</li>
+                <li>Cooldown State: After each Pomodoro, Pomo automatically enters a 5-minute cooldown state, allowing you to relax and recharge before the next session. This cycle continues until you decide to stop.</li>
+                <li>React for Web Development: Pomo is built using React, a popular JavaScript library for building user interfaces. This choice of technology ensures a responsive and dynamic experience for users.</li>
+                <li>HTML and CSS: The foundation of Pomo's interface is built upon HTML and CSS, making it highly customizable for those who wish to personalize their experience.</li>
+                <li>JavaScript for Functionality: JavaScript is used to manage the timer, handle user interactions, and ensure the Pomodoro Technique is faithfully executed.</li>
+
+            </ul>
+            <br/>
+            <br/>
+
+            </>
+        ),
         open:false,
     },
 ];
