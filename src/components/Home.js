@@ -1,21 +1,30 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Home() {
     let navigate = useNavigate();
 
     return (
+
         <div className="home-container">
+            <div className="github-icon roboto-condensed">
+                <a href="https://github.com/calebchiang" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                    <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} /> GitHub
+                </a>
+            </div>
+
             <div className="left-content">
                 <h1 className="main-title">Caleb Chiang.</h1>
-                <p className="description roboto-condensed">Full Time Student and Aspiring Software Developer</p>
+                <p className="description roboto-condensed">Full Time Student and Aspiring Software Developer 👋🏼</p>
             </div>
             <div className="right-content">
                 <img src="/images/pfp.jpg" alt="Caleb Chiang" className="profile-pic" />
                 <div className="button-container roboto-condensed">
-                    <button onClick={() => navigate('/projects')} className="btn btn-primary">Projects</button>
-                    <button onClick={() => window.open('/resume.pdf')} className="btn btn-secondary">Resume</button>
+                    <button onClick={() => navigate('/projects')} className="btn btn-primary roboto-condensed">Projects</button>
+                    <button onClick={() => window.open('/resume.pdf')} className="btn btn-secondary roboto-condensed">Resume</button>
                 </div>
             </div>
 
@@ -34,7 +43,7 @@ function Home() {
                         Beyond group endeavors, I have undertaken personal projects encompassing full-stack web
                         applications and game development. </p>
                     <p className="personal-info roboto-light">Currently, one of my goals is to
-                        gain professional experience in software development, with a focus on accumulating
+                        gain professional experience in software development and focus on accumulating
                         practical experience and enhancing my learning. I prioritize hands-on experience
                         and continual skill development, embodying a growth mindset that drives me to seek
                         out new challenges and learning opportunities. </p>
@@ -52,7 +61,7 @@ function Home() {
                     <img src="/images/hike.jpg" alt="Personal" className="personal-photo3" />
                     <img src="/images/family.JPG" alt="Personal" className="personal-photo4" />
                     <img src="/images/volleyball.JPG" alt="Personal" className="personal-photo5" />
-                    <img src="/images/water.jpg" alt="Personal" className="personal-photo6" />
+                    <img src="/images/bcit.jpg" alt="Personal" className="personal-photo6" />
                 </div>
 
                 {/* Technologies container added right after the personal photos container */}

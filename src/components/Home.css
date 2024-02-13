@@ -6,7 +6,7 @@
 }
 
 .home-container {
-    background: linear-gradient(to right, #2F61EB, #CAEBD3);
+    background: linear-gradient(to right, #2F61EB, lightblue);
     min-height: 200vh;
     padding: 20px;
     font-family: 'PT Serif', serif;
@@ -32,7 +32,7 @@
 }
 .main-title {
     font-size: 3rem;
-    color: #CAEBD3;
+    color: whitesmoke;
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -50,7 +50,7 @@
     max-height: 330px;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 
@@ -144,7 +144,7 @@
 
 
 .personal-photo1 {
-    max-width: 270px;
+    max-width: 250px;
     max-height: 200px;/* Adjust based on your preference */
     height: auto;
 }
@@ -157,28 +157,27 @@
 
 .personal-photo3 {
     max-width: 300px;
-    max-height: 200px;/* Adjust based on your preference */
+    max-height: 200px;
 }
 
 .personal-photo4 {
     max-width: 300px;
-    max-height: 200px;/* Adjust based on your preference */
+    max-height: 250px;
 }
 
 .personal-photo5 {
-    max-width: 350px;
-    max-height: 250px;/* Adjust based on your preference */
+    max-width: 300px;
+    max-height: 250px;
 }
 
 
 .personal-photo6 {
-    max-width: 280px;
-    max-height: 300px;/* Adjust based on your preference */
+    max-width: 300px;
+    max-height: 230px;
 }
 
 .personal-photo1, .personal-photo2, .personal-photo3, .personal-photo4, .personal-photo5, .personal-photo6 {
     max-width: 100%; /* Ensures the image is responsive and does not overflow its container */
-    height: auto;
     border-radius: 10px;
 }
 
@@ -198,4 +197,9 @@
     font-size: 1.1rem; /* Adjust the size as needed */
     color: #000; /* Adjust the color as needed */
     padding: 5px 0; /* Adds some vertical padding for each list item */
+}
+
+.github-icon{
+   color: black;
+    margin-left: 1300px;
 }
