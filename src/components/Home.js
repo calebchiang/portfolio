@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+
 
 function Home() {
     let navigate = useNavigate();
@@ -36,8 +38,8 @@ function Home() {
                     <h2>About Me</h2>
                     <p className="personal-info roboto-light">Hello! </p>
                      <p className="personal-info roboto-light">My name is Caleb, and I am a  full time Computer Systems Technology
-                        student at the British Columbia Institute of Technology. In my journey thus far,
-                        I have participated in multiple hackathons that allowed me to apply my skills in
+                         student at the British Columbia Institute of Technology.</p>
+                    <p className ="personal-info roboto-light"> In my journey thus far, I have participated in multiple hackathons that allowed me to apply my skills in
                         real-world scenarios. Additionally, I've contributed to multiple group projects,
                         including the development of a full-stack web application designed as a pedestrian hazard alert system.
                         Beyond group endeavors, I have undertaken personal projects encompassing full-stack web
@@ -50,6 +52,8 @@ function Home() {
                     <p className="personal-info roboto-light"> In my free time, I enjoy playing basketball with my friends and spending
                         time with my family. Growing up in a beautiful city like Vancouver, I have fully taken advantage of the views by going
                     on hikes and enjoying outdoor activities like snowboarding and swimming.</p>
+                    <p className="personal-info roboto-light">Feel free to check out my projects <Link to="/projects">here</Link>.</p>
+
                 </div>
 
                 <div className="photos-and-technologies">
