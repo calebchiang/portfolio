@@ -58,6 +58,51 @@ const projectsData = [
 
     {
         id:2,
+        date:"24-01-01",
+        name: "Quick Define",
+        description: "Chrome Extension, Study Tool",
+        summary: () => (
+            <>
+                <strong>Summary:</strong>
+                <br />
+                <br />
+                Quick Define is a Chrome extension designed to streamline your reading and
+                web browsing experience by offering instant word definitions with a simple highlight.
+                Ideal for students who use their laptops for readings, this lightweight tool fetches
+                definitions from reputable sources and displays them in a convenient tooltip right on
+                your current webpage. With Quick Define, you no longer need to navigate away from your
+                page or disrupt your flow of reading to understand new vocabulary. It embodies the perfect
+                blend of simplicity, efficiency, and utility, making it an essential tool for enhancing
+                your web browsing and learning experience.
+                <br />
+                <br />
+                Technical Features:
+                <ul>
+                    <li>Content Scripts: Core functionality resides in the content script that interact directly with the content of web pages.</li>
+                    <li>Background Script: A background script handles API calls to fetch definition.</li>
+                    <li>External Dictionary: The extension leverages an external dictionary API (e.g., DictionaryAPI.dev) to fetch definitions, ensuring that users receive accurate and comprehensive explanations for selected words. </li>
+                </ul>
+                <br/>
+                <br/>
+
+                <div className="github-icon2">
+                    <a href="https://github.com/calebchiang/quick_define" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                        <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
+                    </a>
+                </div>
+
+            </>
+        ),
+        open: false,
+        screenshots: [
+            '/images/quick_define.png',
+            '/images/quick_define2.png'
+
+        ]
+    },
+
+    {
+        id:3,
         date:"23-09-01",
         name:"Pomo",
         description:"Productivity Tool, Chrome Extension",
@@ -113,7 +158,7 @@ const projectsData = [
     },
 
     {
-        id:3,
+        id:4,
         date:"23-10-01",
         name: "Stock Market Analysis",
         description: "Full Stack Web Application, ",
