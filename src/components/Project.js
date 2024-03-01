@@ -38,7 +38,7 @@ const projectsData = [
                 </ul>
                 <br/>
                 <br/>
-                For more details, please visit our project documentation <a href="https://side-guide-ed7e3.web.app/" target="_blank" rel="noopener noreferrer">here</a>
+                Check out the app <a href="https://side-guide-ed7e3.web.app/" target="_blank" rel="noopener noreferrer">here</a>!
                 <br/>
                 <div className="github-icon2">
                     <a href="https://github.com/calebchiang/1800_202310_BBY20" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
@@ -58,6 +58,45 @@ const projectsData = [
 
     {
         id:2,
+        date:"23-12-01",
+        name: "Sudoku",
+        description: "React, Game Development",
+        summary: () => (
+            <>
+                <strong>Summary:</strong>
+                <br />
+                <br />
+                This Sudoku web app, crafted using React, showcases a streamlined single-page application
+                (SPA) design for a seamless user experience.  At its core, the app employs a backtracking algorithm based
+                on depth-first search principles to dynamically generate puzzles of varying difficulties and solve them.
+                <br />
+                <br />
+                Technical Features:
+                <ul>
+                    <li>React's State Management: The app efficiently updates the game board in real-time and validates solutions instantaneously </li>
+                    <li>Styled With CSS: For a responsive layout, it ensures compatibility across devices </li>
+                    <li>Deployed on Netlify: this project exemplifies modern web development practices and CI/CD deployment strategies</li>
+                </ul>
+                <br/>
+                <br/>
+                Try out the game <a href="https://calebchiangsudoku.netlify.app/" target="_blank" rel="noopener noreferrer">here</a>!
+                <div className="github-icon2">
+                    <a href="https://github.com/calebchiang/sudoku" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                        <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
+                    </a>
+                </div>
+
+            </>
+        ),
+        open: false,
+        screenshots: [
+
+
+        ]
+    },
+
+    {
+        id:3,
         date:"24-01-01",
         name: "Quick Define",
         description: "Chrome Extension, Study Tool",
@@ -102,7 +141,7 @@ const projectsData = [
     },
 
     {
-        id:3,
+        id:4,
         date:"23-09-01",
         name:"JavaScript Chess",
         description:"Game Development, JavaScript, React",
@@ -128,6 +167,7 @@ const projectsData = [
                 </ul>
                 <br/>
                 <br/>
+                Check it out <a href="https://calebchess.netlify.app/" target="_blank" rel="noopener noreferrer">here</a>
                 <div className="github-icon2">
                     <a href="https://github.com/calebchiang/chess" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                         <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
@@ -140,8 +180,7 @@ const projectsData = [
         ),
         open:false,
         screenshots:[
-            '/images/chess.png',
-            '/images/checkmate.png',
+
 
 ]
 
@@ -150,7 +189,7 @@ const projectsData = [
     },
 
     {
-        id:4,
+        id:5,
         date:"23-10-01",
         name: "Stock Market Analysis",
         description: "Full Stack Web Application, ",

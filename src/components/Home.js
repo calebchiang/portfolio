@@ -76,8 +76,6 @@ function Home() {
                         <li>Node.js with Express</li>
                         <li>MongoDB</li>
                         <li>Unity</li>
-                        <li>TypeScript</li>
-                        <li>Sentiment Analysis</li>
                     </ul>
                 </div>
             </div>
