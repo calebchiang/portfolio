@@ -244,6 +244,34 @@ const projectsData = [
 
         ]
     },
+    {
+        id:6,
+        date:"23-12-25",
+        name: "Etch-a-Sketch",
+        description: "JavaScript",
+        summary: () => (
+            <>
+                <strong>Summary:</strong>
+                <br />
+                <br />
+                Fun drawing tool developed using basic JavaScript. Just enter grid size and start drawing!
+                <br/>
+                <br/>
+                Try it out <a href="https://sketchaetch.netlify.app/" target="_blank" rel="noopener noreferrer">here</a>
+                <div className="github-icon2">
+                    <a href="https://github.com/calebchiang/etch_a_sketch" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                        <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
+                    </a>
+                </div>
+
+            </>
+        ),
+        open:false,
+        screenshots:[
+
+
+        ]
+    },
 ];
 
 function Project() {
