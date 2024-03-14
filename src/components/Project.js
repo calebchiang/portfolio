@@ -3,10 +3,61 @@ import './Project.css'; // Link to your CSS file for styling
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-// Your projects data
+
 const projectsData = [
     {
         id:1,
+        date:"23-01-01",
+        name: "RSS Reader",
+        description: "Full Stack Web Application",
+        summary: () => (
+            <>
+                <strong>Summary:</strong>
+                <br />
+                <br />
+                The RSS Reader project is a full-stack web application
+                designed to offer users a personalized news aggregation experience.
+                By subscribing to various RSS feeds, users can access a curated list
+                of articles and updates from their preferred news sources,
+                all consolidated into one easy-to-navigate platform.
+                <br />
+                <br />
+                <ul>
+                <li>Frontend: Developed with React, the application features a responsive, user-friendly interface that updates dynamically to display the latest news articles fetched from subscribed RSS feeds. Utilizes Tailwind CSS for styling to create an intuitive and accessible user experience. </li>
+               <li>Backend: Built on Node.js and Express, the backend architecture supports user authentication, subscription management, and RSS feed parsing. It interfaces with MongoDB to store user data, including profiles, subscriptions, and cached articles for offline viewing. </li>
+               <li>Database: MongoDB is used to efficiently manage data, with schemas designed for users and subscriptions that ensure fast retrieval and scalability.</li>
+                </ul>
+                <br />
+                <br />
+                Features:
+                <ul>
+                    <li>User Authentication: Secure signup and login processes enable personalized user experiences and subscription management.</li>
+                    <li>Subscription Management: Users can add, manage, and remove RSS feed subscriptions, tailoring the content to their interests.</li>
+                    <li>Content Aggregation: The application fetches, parses, and displays articles from subscribed RSS feeds, providing users with a consolidated view of news and updates.</li>
+                    <li>MVC Pattern: Embraced the Model-View-Controller (MVC) architecture to structure the backend,
+                        enhancing maintainability and scalability. This separation of concerns allowed for modular
+                        development, where models define data structures, controllers handle business logic, and
+                        views (in conjunction with React) manage user interface updates.</li>
+                    <li>CRUD Functionality: Developed comprehensive CRUD operations for managing user profiles and RSS feed subscriptions. Users can create accounts, subscribe to or unsubscribe from feeds, offering full control over their data and personalization of the content.</li>
+                </ul>
+                <br/>
+                <br/>
+                <div className="github-icon2">
+                    <a href="https://github.com/calebchiang/rss_reader" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                        <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
+                    </a>
+                </div>
+
+            </>
+        ),
+        open: false,
+        screenshots: [
+            '/rssreader2.png',
+            '/rssreader3.png',
+        ]
+    },
+    {
+        id:2,
         date:"23-01-01",
         name: "Side Guide",
         description: "Full Stack Web Application",
@@ -57,7 +108,7 @@ const projectsData = [
     },
 
     {
-        id:2,
+        id:3,
         date:"23-12-01",
         name: "Sudoku",
         description: "React, Game Development",
@@ -94,38 +145,22 @@ const projectsData = [
 
         ]
     },
-
     {
-        id:3,
+        id:4,
         date:"24-01-01",
-        name: "Quick Define",
-        description: "Chrome Extension, Study Tool",
+        name: "Pokemon Matching Game",
+        description: "React, Game Development",
         summary: () => (
             <>
                 <strong>Summary:</strong>
                 <br />
                 <br />
-                Quick Define is a Chrome extension designed to streamline your reading and
-                web browsing experience by offering instant word definitions with a simple highlight.
-                Ideal for students who use their laptops for readings, this lightweight tool fetches
-                definitions from reputable sources and displays them in a convenient tooltip right on
-                your current webpage. With Quick Define, you no longer need to navigate away from your
-                page or disrupt your flow of reading to understand new vocabulary. It embodies the perfect
-                blend of simplicity, efficiency, and utility, making it an essential tool for enhancing
-                your web browsing and learning experience.
-                <br />
-                <br />
-                Technical Features:
-                <ul>
-                    <li>Content Scripts: Core functionality resides in the content script that interact directly with the content of web pages.</li>
-                    <li>Background Script: A background script handles API calls to fetch definition.</li>
-                    <li>External Dictionary: The extension leverages an external dictionary API (e.g., DictionaryAPI.dev) to fetch definitions, ensuring that users receive accurate and comprehensive explanations for selected words. </li>
-                </ul>
+                Simple Pokemon matching game developed in JavaScript using React.
                 <br/>
                 <br/>
-
+                Try out the game <a href="https://matchthepokemon.netlify.app/" target="_blank" rel="noopener noreferrer">here</a>!
                 <div className="github-icon2">
-                    <a href="https://github.com/calebchiang/quick_define" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                    <a href="https://github.com/calebchiang/pokemon" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                         <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
                     </a>
                 </div>
@@ -134,140 +169,6 @@ const projectsData = [
         ),
         open: false,
         screenshots: [
-            '/images/quick_define.png',
-            '/images/quick_define2.png'
-
-        ]
-    },
-
-    {
-        id:4,
-        date:"23-09-01",
-        name:"JavaScript Chess",
-        description:"Game Development, JavaScript, React",
-        summary: () => (
-            <>
-                <strong>Summary:</strong>
-                <br />
-                <br />
-                This project is a dynamic chess game built with React, leveraging its powerful
-                state management capabilities to create an engaging and responsive user interface.
-                By combining React with traditional web technologies like JavaScript, HTML, and CSS,
-                the game offers a modern web application experience, allowing two players to engage
-                in chess matches directly from their browsers.
-                <br/>
-                <br/>
-                Features:
-                <ul>
-                    <li>React Powered Interface: Utilizes React's component-based architecture for efficient updates and renderings.</li>
-                    <li>Rule Enforcement: Enforces all standard chess rules, including pawn promotion and check/checkmate logic.</li>
-                    <li>Move Validation: Automatically checks and highlights legal moves for pieces to assist players and prevent illegal actions.</li>
-                    <li>Object-Oriented Design: Implements OOP principles to manage chess pieces, encapsulating each piece's properties and behaviors within classes. This approach simplifies code maintenance, scalability, and reusability.</li>
-                    <li>Version Control: Uses Git for version control.</li>
-                </ul>
-                <br/>
-                <br/>
-                Check it out <a href="https://calebchess.netlify.app/" target="_blank" rel="noopener noreferrer">here</a>
-                <div className="github-icon2">
-                    <a href="https://github.com/calebchiang/chess" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
-                    </a>
-                </div>
-
-
-
-            </>
-        ),
-        open:false,
-        screenshots:[
-
-
-]
-
-
-
-    },
-
-    {
-        id:5,
-        date:"23-10-01",
-        name: "Stock Market Analysis",
-        description: "Full Stack Web Application, ",
-        summary: () => (
-            <>
-            <strong>Summary:</strong>
-            <br />
-            <br />
-                This stock analysis web application is an innovative solution
-                designed for investors and financial enthusiasts seeking a comprehensive
-                tool to enhance their market analysis and investment strategies. Developed
-                with a modern tech stack, the application combines the reactive capabilities
-                of React.js for the frontend with the robustness of Node.js and Express.js in the
-                backend, seamlessly integrated with a MongoDB database for secure data storage.
-            <br/>
-            <br/>
-                The platform stands out for its real-time stock data fetching,
-                facilitated through integration with the Alpha Vantage API, offering
-                users access to a wealth of stock information at their fingertips. A
-                standout feature is the application's advanced sorting mechanism, powered
-                by the quicksort algorithm, allowing users to organize stocks based on various
-                filters such as market capitalization and yield. This feature is invaluable for
-                users aiming to tailor their investment portfolios according to specific metrics
-                and performance indicators.
-                <br/>
-            <br/>
-            Features:
-            <ul>
-                <li>Technology: Node.js with Express.js framework for backend and React.js for front end.</li>
-                <li>Routing: React Router for navigating between different components and pages.</li>
-                <li>Database: MongoDB, utilized for storing user data and watchlists.</li>
-                <li>Password Handling: Uses bcrypt for hashing user passwords securely.</li>
-                <li>User Authentication: Handles user registration and login and stores in MongoDB database</li>
-                <li>API Integration: Communicates with the Alpha Vantage API to fetch stock data.</li>
-                <li>CORS Configuration: Set up to allow requests from the frontend, especially during development with different origins for frontend and backend.</li>
-                <li>Version Control: Uses Git for version control.</li>
-            </ul>
-            <br/>
-            <br/>
-
-                <div className="github-icon2">
-                    <a href="https://github.com/calebchiang/stock_market_analysis" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
-                    </a>
-                </div>
-
-            </>
-        ),
-        open:false,
-        screenshots:[
-
-
-        ]
-    },
-    {
-        id:6,
-        date:"23-12-25",
-        name: "Etch-a-Sketch",
-        description: "JavaScript",
-        summary: () => (
-            <>
-                <strong>Summary:</strong>
-                <br />
-                <br />
-                Fun drawing tool developed using basic JavaScript. Just enter grid size and start drawing!
-                <br/>
-                <br/>
-                Try it out <a href="https://sketchaetch.netlify.app/" target="_blank" rel="noopener noreferrer">here</a>
-                <div className="github-icon2">
-                    <a href="https://github.com/calebchiang/etch_a_sketch" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
-                    </a>
-                </div>
-
-            </>
-        ),
-        open:false,
-        screenshots:[
 
 
         ]
@@ -275,10 +176,10 @@ const projectsData = [
 ];
 
 function Project() {
-    // This state will manage which project details are shown
+
     const [projects, setProjects] = useState(projectsData);
 
-    // Function to toggle the open state of a project
+
     const toggleDetails = (id) => {
         const updatedProjects = projects.map(project => {
             if (project.id === id) {
@@ -292,7 +193,8 @@ function Project() {
     return (
         <div className="projects-list-container">
             <ul className="projects-list">
-                <p>projects</p>
+                <h4 style={{ fontWeight: 'bold' }}>Projects</h4>
+                <p> Click on a project to learn more. All code is uploaded on GitHub.</p>
                 {projects.map(project => (
                     <li key={project.id} className="project-list-item">
                         <span className="project-date">{project.date}</span>
@@ -300,7 +202,6 @@ function Project() {
                             {project.name}
                         </button>
                         <div className={`project-details ${project.open ? 'open' : ''}`}>
-                            {/* This div will now have an 'open' class when project.open is true */}
                             {project.open && (
                                 <>
                                     <p><em>{project.description}</em></p>
@@ -313,7 +214,6 @@ function Project() {
                                             className="project-screenshot"
                                         />
                                     ))}
-                                    {/* Add more details or links as needed */}
                                 </>
                             )}
                         </div>
