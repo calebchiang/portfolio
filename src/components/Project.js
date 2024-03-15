@@ -42,6 +42,8 @@ const projectsData = [
                 </ul>
                 <br/>
                 <br/>
+                Check out the app <a href="https://simplerss.netlify.app/" target="_blank" rel="noopener noreferrer">here</a>!
+                <br/>
                 <div className="github-icon2">
                     <a href="https://github.com/calebchiang/rss_reader" target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
                         <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }} />
