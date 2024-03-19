@@ -20,7 +20,7 @@ function Home() {
 
             <div className="left-content">
                 <h1 className="main-title">Caleb Chiang.</h1>
-                <p className="description roboto-condensed">Full Time Student and Aspiring Software Developer 👋🏼</p>
+                <p className="description roboto-condensed">Full Stack Software Developer 👋🏼</p>
             </div>
             <div className="right-content">
                 <img src="/images/pfp.jpg" alt="Caleb Chiang" className="profile-pic" />
