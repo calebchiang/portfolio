@@ -127,8 +127,9 @@ a {
 
 .nav-avatar img {
   object-fit: cover;
-  object-position: 50% 62%;
+  object-position: 50% 78%;
   transform: scale(1.55);
+  transform-origin: 50% 72%;
 }
 
 .nav-name {
@@ -984,8 +985,9 @@ h1 em {
 
 .footer-avatar img {
   object-fit: cover;
-  object-position: 50% 62%;
+  object-position: 50% 78%;
   transform: scale(1.55);
+  transform-origin: 50% 72%;
 }
 
 .footer-profile strong {
