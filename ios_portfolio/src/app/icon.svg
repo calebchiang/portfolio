@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect x="32" y="32" width="448" height="448" rx="108" fill="#ff0a54" />
+  <g transform="translate(256 256) skewX(-10) translate(-256 -256)">
+    <text
+      x="244"
+      y="330"
+      fill="#FFFFFF"
+      font-family="Arial Black, Arial, Helvetica, sans-serif"
+      font-size="220"
+      font-style="italic"
+      font-weight="900"
+      letter-spacing="-20"
+      text-anchor="middle"
+    >CC</text>
+  </g>
+</svg>
