@@ -296,8 +296,8 @@ export default function Home() {
             Available for junior iOS opportunities. Typical reply within a day.
           </p>
           <div className="contact-actions">
-            <a className="contact-email" href="mailto:hello@calebchiang.dev">
-              hello@calebchiang.dev
+            <a className="contact-email" href="mailto:caleb@calebchiang.dev">
+              caleb@calebchiang.dev
             </a>
             <a className="contact-resume" href="#resume">
               Download résumé <span aria-hidden="true">↓</span>
@@ -335,7 +335,7 @@ export default function Home() {
 
           <div className="footer-contact">
             <span>Contact</span>
-            <a href="mailto:hello@calebchiang.dev">hello@calebchiang.dev</a>
+            <a href="mailto:caleb@calebchiang.dev">caleb@calebchiang.dev</a>
             <p className="footer-location">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z" />
