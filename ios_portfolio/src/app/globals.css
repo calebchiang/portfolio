@@ -1250,11 +1250,12 @@ h1 em {
     width: 100%;
   }
 
-  .resume-link {
-    grid-column: 1 / -1;
+  .actions .resume-link {
+    display: none;
   }
 
   .skills {
+    justify-content: center;
     gap: 0.65rem;
     margin-top: 2.5rem;
   }
