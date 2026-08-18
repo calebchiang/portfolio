@@ -121,16 +121,14 @@ export default function Home() {
         </header>
 
         <article className="project-card project-protein">
-          <div className="project-visual">
-            <Image
-              className="project-screenshot"
-              src={screenshotOne}
-              alt="ProteinBuddy progress dashboard on an iPhone"
-              width={1284}
-              height={2778}
-              sizes="(max-width: 820px) 62vw, 390px"
-            />
-          </div>
+          <Image
+            className="project-screenshot"
+            src={screenshotOne}
+            alt="ProteinBuddy progress dashboard on an iPhone"
+            width={1284}
+            height={2778}
+            sizes="(max-width: 820px) 58vw, 290px"
+          />
 
           <div className="project-content">
             <span className="project-number" aria-hidden="true">01</span>
@@ -167,16 +165,14 @@ export default function Home() {
         </article>
 
         <article className="project-card project-kodi">
-          <div className="project-visual">
-            <Image
-              className="project-screenshot"
-              src={kodiAiScreenshot}
-              alt="Kodi AI mobile application shown on an iPhone"
-              width={1284}
-              height={2778}
-              sizes="(max-width: 820px) 62vw, 390px"
-            />
-          </div>
+          <Image
+            className="project-screenshot"
+            src={kodiAiScreenshot}
+            alt="Kodi AI mobile application shown on an iPhone"
+            width={1284}
+            height={2778}
+            sizes="(max-width: 820px) 58vw, 290px"
+          />
 
           <div className="project-content">
             <span className="project-number" aria-hidden="true">02</span>
