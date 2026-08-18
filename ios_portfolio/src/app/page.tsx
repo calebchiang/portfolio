@@ -204,7 +204,7 @@ export default function Home() {
             </dl>
 
             <div className="project-actions">
-              <a className="project-primary" href="#">App Store <span>↗</span></a>
+              <a className="project-primary" href="https://apps.apple.com/app/kodi-ai-speaking-coach/id6760429558">App Store <span>↗</span></a>
             </div>
           </div>
         </article>
@@ -232,10 +232,10 @@ export default function Home() {
                 <ul className="experience-points">
                   <li>Designed and shipped ProteinBuddy and Kodi AI from initial concept through App Store release</li>
                   <li>Built native SwiftUI and UIKit experiences with reusable MVVM architecture</li>
-                  <li>Developed Go REST APIs backed by PostgreSQL for accounts, product data, and app services</li>
-                  <li>Integrated OpenAI features and RevenueCat subscription infrastructure</li>
-                  <li>Iterated from real user feedback across more than 20K combined downloads</li>
-                  <li>Managed testing, analytics, releases, and ongoing production maintenance</li>
+                  <li>Built and maintained Go REST APIs backed by PostgreSQL, with zero production outages to date</li>
+                  <li>Integrated RevenueCat subscriptions, converting 62% of trial users into paying customers</li>
+                  <li>Earned 200+ reviews worldwide across both apps, with 20K+ combined downloads</li>
+                  <li>Maintained a 99%+ successful response rate for OpenAI API requests in production</li>
                 </ul>
               </div>
             </article>
@@ -251,10 +251,10 @@ export default function Home() {
                   <li>Git</li>
                 </ul>
                 <ul className="experience-points">
-                  <li>Worked on a four-person development team to build a React Native mobile app for an Impulse Studio client</li>
-                  <li>Contributed features and fixes within a shared production codebase</li>
+                  <li>Opened and merged 30+ pull requests, delivering production features and fixes within a four-person development team</li>
+                  <li>Delivered 15+ features and bug fixes within a shared production codebase</li>
                   <li>Used Git branching and version-control practices to keep parallel work organized</li>
-                  <li>Opened pull requests, responded to review feedback, and collaborated on safe merges</li>
+                  <li>Reviewed teammates’ code and coordinated conflict-free merges</li>
                   <li>Participated in daily standups, sprint planning, and Agile team ceremonies</li>
                   <li>Coordinated tasks, communicated blockers, and tested changes with teammates before delivery</li>
                 </ul>
