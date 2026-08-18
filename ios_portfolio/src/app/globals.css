@@ -120,9 +120,9 @@ a {
   width: 2.65rem;
   height: 2.65rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 10, 84, 0.18);
+  border: 1px solid #dcdfe6;
   border-radius: 0.72rem;
-  box-shadow: 0 6px 18px rgba(255, 10, 84, 0.12);
+  box-shadow: 0 6px 18px rgba(16, 18, 24, 0.08);
 }
 
 .nav-avatar img {
@@ -978,9 +978,9 @@ h1 em {
   width: 4rem;
   height: 4rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 10, 84, 0.15);
+  border: 1px solid #dcdfe6;
   border-radius: 1rem;
-  box-shadow: 0 8px 22px rgba(255, 10, 84, 0.1);
+  box-shadow: 0 8px 22px rgba(16, 18, 24, 0.08);
 }
 
 .footer-avatar img {
@@ -1163,6 +1163,10 @@ h1 em {
 
   .project-card {
     grid-template-columns: 1fr;
+  }
+
+  .project-number {
+    display: none;
   }
 
   .project-content {

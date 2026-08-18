@@ -35,7 +35,7 @@ export default function Home() {
           <a className="github-link" href="https://github.com/calebchiang" target="_blank" rel="noreferrer">
             GitHub <span aria-hidden="true">↗</span>
           </a>
-          <a className="hire-button" href="#contact">Hire me</a>
+          <a className="hire-button" href="#contact">Contact</a>
         </div>
       </header>
 
@@ -64,7 +64,8 @@ export default function Home() {
           <p className="intro">
             I&apos;m <strong>Caleb Chiang</strong>, a junior{" "}
             <strong>iOS developer in Vancouver, BC</strong>, with 2+ years and
-            20K+ downloads behind me. I take ideas from sketch to App Store.
+            20K+ downloads behind me. I help teams ship thoughtful, reliable
+            iOS products from concept to launch.
           </p>
 
           <div className="actions">
@@ -322,7 +323,7 @@ export default function Home() {
             </span>
             <div>
               <strong>Caleb Chiang</strong>
-              <p>Junior iOS developer building thoughtful, production-ready mobile experiences.</p>
+              <p>Junior iOS developer helping teams ship thoughtful, reliable iOS products from concept to launch.</p>
             </div>
           </div>
 
