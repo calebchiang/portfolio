@@ -2,6 +2,8 @@
 
 This is my personal portfolio website. It showcases the iOS apps I have shipped, my technical skills, professional experience, education, and contact information.
 
+View the portfolio at [calebchiang.dev](https://www.calebchiang.dev/).
+
 The site is built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Run locally
