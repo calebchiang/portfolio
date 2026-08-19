@@ -7,6 +7,8 @@
   --blue: #ff0a54;
   --blue-deep: #d60747;
   --kodi-blue: #1769ff;
+  --daily-grace-purple: #a78bfa;
+  --daily-grace-purple-deep: #8b5cf6;
   --line: #dcdfe6;
 }
 
@@ -580,6 +582,14 @@ h1 em {
 
 .project-kodi .project-kicker span {
   background: var(--kodi-blue);
+}
+
+.project-daily-grace .project-tagline {
+  color: var(--daily-grace-purple-deep);
+}
+
+.project-daily-grace .project-kicker span {
+  background: var(--daily-grace-purple);
 }
 
 .project-description {

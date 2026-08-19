@@ -1,6 +1,8 @@
 import Image from "next/image";
 import kodiAiScreenshot from "../../public/kodi_ai.png";
 import kodiAiScreenshotTwo from "../../public/kodi_ai_2.png";
+import dailyGraceScreenshot from "../../public/daily_grace.png";
+import dailyGraceScreenshotTwo from "../../public/daily_grace_2.png";
 import profilePhoto from "../../public/pfp.png";
 import proteinBuddyScreenshot from "../../public/protein_buddy.png";
 import proteinBuddyScreenshotTwo from "../../public/protein_buddy_2.png";
@@ -221,6 +223,55 @@ export default function Home() {
 
             <div className="project-actions">
               <a className="project-primary" href="https://apps.apple.com/app/kodi-ai-speaking-coach/id6760429558">App Store <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article className="project-card project-daily-grace">
+          <div className="project-screenshot-pair">
+            <Image
+              src={dailyGraceScreenshotTwo}
+              alt="DailyGrace Bible verse widget app screen on an iPhone"
+              width={1284}
+              height={2778}
+              sizes="(max-width: 820px) 58vw, 300px"
+            />
+            <Image
+              src={dailyGraceScreenshot}
+              alt="DailyGrace Bible verse wallpaper app screen on an iPhone"
+              width={1284}
+              height={2778}
+              sizes="(max-width: 820px) 58vw, 300px"
+            />
+          </div>
+
+          <div className="project-content">
+            <div className="project-kicker"><span /> 03 · Faith &amp; community</div>
+            <h3>Daily Grace</h3>
+            <p className="project-tagline">Lightweight Bible verse and widget app.</p>
+            <p className="project-description">
+              A Bible verse widget app built for members of my church community,
+              making daily reading feel more personal and engaging with a
+              collection of high-quality backgrounds for home-screen widgets
+              and wallpapers.
+            </p>
+
+            <ul className="project-tags" aria-label="DailyGrace technologies">
+              <li>SwiftUI</li>
+              <li>WidgetKit</li>
+              <li>iOS</li>
+              <li>App Store</li>
+            </ul>
+
+            <dl className="project-stats">
+              <div><dt>100+</dt><dd>Downloads</dd></div>
+              <div><dt>5.0★</dt><dd>App Store</dd></div>
+              <div><dt>iOS</dt><dd>Platform</dd></div>
+              <div><dt>Live</dt><dd>On store</dd></div>
+            </dl>
+
+            <div className="project-actions">
+              <a className="project-primary" href="https://apps.apple.com/app/daily-grace/id6758896521">App Store <span>↗</span></a>
             </div>
           </div>
         </article>
