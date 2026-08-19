@@ -1,7 +1,9 @@
 import Image from "next/image";
 import kodiAiScreenshot from "../../public/kodi_ai.png";
+import kodiAiScreenshotTwo from "../../public/kodi_ai_2.png";
 import profilePhoto from "../../public/pfp.png";
 import proteinBuddyScreenshot from "../../public/protein_buddy.png";
+import proteinBuddyScreenshotTwo from "../../public/protein_buddy_2.png";
 import screenshotOne from "../../public/screenshot_1.png";
 import screenshotTwo from "../../public/screenshot_2.png";
 import { CursorGlow } from "./cursor-glow";
@@ -91,7 +93,7 @@ export default function Home() {
         <div className="phone-stage" aria-label="Protein tracking app previews">
           <div className="phone phone-back">
             <Image
-              src={screenshotOne}
+              src={screenshotTwo}
               alt="Progress screen of a protein tracking iPhone app"
               width={1284}
               height={2778}
@@ -101,7 +103,7 @@ export default function Home() {
           </div>
           <div className="phone phone-front">
             <Image
-              src={screenshotTwo}
+              src={proteinBuddyScreenshot}
               alt="Meals screen of a protein tracking iPhone app"
               width={1284}
               height={2778}
@@ -122,17 +124,24 @@ export default function Home() {
         </header>
 
         <article className="project-card project-protein">
-          <Image
-            className="project-screenshot"
-            src={proteinBuddyScreenshot}
-            alt="ProteinBuddy progress dashboard on an iPhone"
-            width={1284}
-            height={2778}
-            sizes="(max-width: 820px) 58vw, 290px"
-          />
+          <div className="project-screenshot-pair">
+            <Image
+              src={screenshotOne}
+              alt="ProteinBuddy progress dashboard on an iPhone"
+              width={1284}
+              height={2778}
+              sizes="(max-width: 820px) 58vw, 300px"
+            />
+            <Image
+              src={proteinBuddyScreenshotTwo}
+              alt="Another ProteinBuddy app screen on an iPhone"
+              width={1284}
+              height={2778}
+              sizes="(max-width: 820px) 58vw, 300px"
+            />
+          </div>
 
           <div className="project-content">
-            <span className="project-number" aria-hidden="true">01</span>
             <div className="project-kicker"><span /> 01 · Nutrition &amp; fitness</div>
             <h3>ProteinBuddy</h3>
             <p className="project-tagline">Hit your protein goals without the guesswork.</p>
@@ -166,17 +175,24 @@ export default function Home() {
         </article>
 
         <article className="project-card project-kodi">
-          <Image
-            className="project-screenshot"
-            src={kodiAiScreenshot}
-            alt="Kodi AI mobile application shown on an iPhone"
-            width={1284}
-            height={2778}
-            sizes="(max-width: 820px) 58vw, 290px"
-          />
+          <div className="project-screenshot-pair">
+            <Image
+              src={kodiAiScreenshotTwo}
+              alt="Another Kodi AI app screen on an iPhone"
+              width={1284}
+              height={2778}
+              sizes="(max-width: 820px) 58vw, 300px"
+            />
+            <Image
+              src={kodiAiScreenshot}
+              alt="Kodi AI mobile application shown on an iPhone"
+              width={1284}
+              height={2778}
+              sizes="(max-width: 820px) 58vw, 300px"
+            />
+          </div>
 
           <div className="project-content">
-            <span className="project-number" aria-hidden="true">02</span>
             <div className="project-kicker"><span /> 02 · Education</div>
             <h3>Kodi AI</h3>
             <p className="project-tagline">Build confidence every time you speak.</p>
