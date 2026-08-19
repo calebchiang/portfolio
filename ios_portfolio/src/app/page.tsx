@@ -91,7 +91,7 @@ export default function Home() {
         <div className="phone-stage" aria-label="Protein tracking app previews">
           <div className="phone phone-back">
             <Image
-              src={proteinBuddyScreenshot}
+              src={screenshotOne}
               alt="Progress screen of a protein tracking iPhone app"
               width={1284}
               height={2778}
@@ -124,7 +124,7 @@ export default function Home() {
         <article className="project-card project-protein">
           <Image
             className="project-screenshot"
-            src={screenshotOne}
+            src={proteinBuddyScreenshot}
             alt="ProteinBuddy progress dashboard on an iPhone"
             width={1284}
             height={2778}
