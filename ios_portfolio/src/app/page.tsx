@@ -1,8 +1,6 @@
 import Image from "next/image";
 import kodiAiScreenshot from "../../public/kodi_ai.png";
 import kodiAiScreenshotTwo from "../../public/kodi_ai_2.png";
-import dailyGraceScreenshot from "../../public/daily_grace.png";
-import dailyGraceScreenshotTwo from "../../public/daily_grace_2.png";
 import profilePhoto from "../../public/pfp.png";
 import proteinBuddyScreenshot from "../../public/protein_buddy.png";
 import proteinBuddyScreenshotTwo from "../../public/protein_buddy_2.png";
@@ -227,54 +225,6 @@ export default function Home() {
           </div>
         </article>
 
-        <article className="project-card project-daily-grace">
-          <div className="project-screenshot-pair">
-            <Image
-              src={dailyGraceScreenshotTwo}
-              alt="DailyGrace Bible verse widget app screen on an iPhone"
-              width={1284}
-              height={2778}
-              sizes="(max-width: 820px) 58vw, 300px"
-            />
-            <Image
-              src={dailyGraceScreenshot}
-              alt="DailyGrace Bible verse wallpaper app screen on an iPhone"
-              width={1284}
-              height={2778}
-              sizes="(max-width: 820px) 58vw, 300px"
-            />
-          </div>
-
-          <div className="project-content">
-            <div className="project-kicker"><span /> 03 · Faith &amp; community</div>
-            <h3>Daily Grace</h3>
-            <p className="project-tagline">Lightweight Bible verse and widget app.</p>
-            <p className="project-description">
-              A Bible verse widget app built for members of my church community,
-              making daily reading feel more personal and engaging with a
-              collection of high-quality backgrounds for home-screen widgets
-              and wallpapers.
-            </p>
-
-            <ul className="project-tags" aria-label="DailyGrace technologies">
-              <li>SwiftUI</li>
-              <li>WidgetKit</li>
-              <li>iOS</li>
-              <li>App Store</li>
-            </ul>
-
-            <dl className="project-stats">
-              <div><dt>100+</dt><dd>Downloads</dd></div>
-              <div><dt>5.0★</dt><dd>App Store</dd></div>
-              <div><dt>iOS</dt><dd>Platform</dd></div>
-              <div><dt>Live</dt><dd>On store</dd></div>
-            </dl>
-
-            <div className="project-actions">
-              <a className="project-primary" href="https://apps.apple.com/app/daily-grace/id6758896521">App Store <span>↗</span></a>
-            </div>
-          </div>
-        </article>
       </section>
 
       <section className="experience-section" id="experience" aria-labelledby="experience-title">
@@ -308,27 +258,6 @@ export default function Home() {
             </article>
 
             <article className="experience-item experience-reveal">
-              <div className="experience-period">2024 — 2025</div>
-              <div className="experience-content">
-                <h3>Mobile Developer Co-op</h3>
-                <p className="experience-meta">Impulse Studio · Client mobile application · Vancouver, BC</p>
-                <ul className="experience-tags" aria-label="Mobile Developer Co-op focus areas">
-                  <li>React Native</li>
-                  <li>Agile</li>
-                  <li>Git</li>
-                </ul>
-                <ul className="experience-points">
-                  <li>Opened and merged 30+ pull requests, delivering production features and fixes within a four-person development team</li>
-                  <li>Delivered 15+ features and bug fixes within a shared production codebase</li>
-                  <li>Used Git branching and version-control practices to keep parallel work organized</li>
-                  <li>Reviewed teammates’ code and coordinated conflict-free merges</li>
-                  <li>Participated in daily standups, sprint planning, and Agile team ceremonies</li>
-                  <li>Coordinated tasks, communicated blockers, and tested changes with teammates before delivery</li>
-                </ul>
-              </div>
-            </article>
-
-            <article className="experience-item experience-reveal">
               <div className="experience-period">2023 — 2025</div>
               <div className="experience-content">
                 <h3>Computer Systems Technology</h3>
@@ -340,11 +269,11 @@ export default function Home() {
                 </ul>
                 <ul className="experience-points">
                   <li>Completed an intensive two-year program combining computer-systems theory with hands-on software development</li>
-                  <li>Built and deployed real applications through collaborative, deadline-driven project work</li>
-                  <li>Developed software using JavaScript, Python, Java, C, Go, and Kotlin for Android across multiple environments</li>
-                  <li>Practised the full development lifecycle from requirements and design through testing and maintenance</li>
-                  <li>Strengthened problem-solving through systems, cloud computing, databases, and applied AI coursework</li>
-                  <li>Worked in software teams to communicate decisions, divide scope, and deliver reliable solutions</li>
+                  <li>Developed software using JavaScript, Python, Java, C, and Go</li>
+                  <li>Strengthened problem-solving through systems, cloud computing, databases, algorithms, and data structures</li>
+                  <li>Collaborated in Agile software teams on shared codebases using GitHub, code reviews, and issue tracking, keeping parallel development organized</li>
+                  <li>Opened 50+ GitHub pull requests that were approved and merged across academic projects, helping teams deliver well-tested changes with fewer regressions</li>
+                  <li>Designed and implemented REST APIs connected to relational databases, enabling dependable data flow between frontend and backend systems</li>
                 </ul>
               </div>
             </article>
@@ -355,11 +284,7 @@ export default function Home() {
       <section className="contact-section" id="contact" aria-labelledby="contact-title">
         <div className="contact-aurora" aria-hidden="true" />
         <div className="contact-content">
-          <span className="contact-kicker">Let&apos;s build</span>
-          <h2 id="contact-title">
-            Looking for an iOS developer?
-            <em>Let&apos;s ship something great.</em>
-          </h2>
+          <h2 id="contact-title">Get in touch.</h2>
           <p>
             Available for junior iOS opportunities. Typical reply within a day.
           </p>
@@ -372,7 +297,18 @@ export default function Home() {
             </a>
           </div>
           <nav className="contact-socials" aria-label="Social links">
-            <a href="https://github.com/calebchiang" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/calebchiang" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.28-5.27-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.47.11-3.05 0 0 .96-.31 3.16 1.18a10.9 10.9 0 0 1 5.75 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.58.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.06.79 2.14v3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z" />
+              </svg>
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/caleb-chiang-b8975042b/" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.47-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.04H3.54V8.98H7.1v11.47Z" />
+              </svg>
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
           </nav>
         </div>
       </section>
@@ -411,7 +347,20 @@ export default function Home() {
               </svg>
               Vancouver, BC
             </p>
-            <a href="https://github.com/calebchiang" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <div className="footer-socials">
+              <a href="https://github.com/calebchiang" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.28-5.27-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.47.11-3.05 0 0 .96-.31 3.16 1.18a10.9 10.9 0 0 1 5.75 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.58.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.06.79 2.14v3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/caleb-chiang-b8975042b/" target="_blank" rel="noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.47-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.04H3.54V8.98H7.1v11.47Z" />
+                </svg>
+                LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </footer>
