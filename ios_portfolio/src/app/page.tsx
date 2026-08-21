@@ -169,7 +169,7 @@ export default function Home() {
             </dl>
 
             <div className="project-actions">
-              <a className="project-primary" href="#">App Store <span>↗</span></a>
+              <a className="project-primary" href="https://apps.apple.com/app/proteinbuddy-calorie-tracker/id6799747163">App Store <span>↗</span></a>
             </div>
           </div>
         </article>
